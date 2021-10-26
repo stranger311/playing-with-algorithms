@@ -1,9 +1,9 @@
 #include <stdlib.h>
 
-int BinarySearch(int items[],int key)
+int BinarySearch(int items[],int size,int key)
 {
     int start = 0;
-    int end = (int)(sizeof(items)/ sizeof(items[0])) - 1;
+    int end = size - 1;
     int mid = (start + end) / 2;
 
     while (items[mid] != key && start < end) {
